@@ -40,6 +40,9 @@
     align-items: center;
     padding-bottom: 20px;
   }
+  .header-body form, .header-body div{
+    gap: 5px;
+  }
   .mobile-menu-icon {
     display: flex;
     justify-content: center;

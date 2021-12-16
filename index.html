@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Medical Laboratory</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link
+      rel="stylesheet"
+      href="js/fancybox/jquery.fancybox.css"
+      type="text/css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css"
+      integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tinycarousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
+    <script
+      type="text/javascript"
+      src="js/fancybox/jquery.fancybox.pack.js"
+    ></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"
+      integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/index.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <ul class="rslides">
+        <li><img src="img/hero-img.jpg" alt="" /></li>
+        <li><img src="img/hero-img-2.jpg" alt="" /></li>
+        <li><img src="img/hero-img-3.jpg" alt="" /></li>
+      </ul>
+      <div class="header-content">
+        <div class="header-top max-width">
+          <div class="header-links flex-row">
+            <figure>
+              <img src="img/logo-header.png" alt="" />
+            </figure>
+            <div class="flex-row">
+              <i class="fas fa-phone-volume"></i>
+              <div>
+                <h3 class="common-hover">+123 45 678 910</h3>
+                <p>info@demolink.org</p>
+              </div>
+            </div>
+            <div class="flex-row">
+              <i class="far fa-clock"></i>
+              <div>
+                <h3>9:00 - 18:00</h3>
+                <p>Monday- Friday</p>
+              </div>
+            </div>
+            <a href="#contact" class="base-btn blue-btn-white-brdr"
+              >Get In Touch</a
+            >
+          </div>
+          <a
+            href="#"
+            class="mobile-menu-icon"
+            onclick="$('#menu').animate({ height:'toggle' },300);"
+            ><i class="fas fa-bars"></i
+          ></a>
+          <nav>
+            <ul id="menu">
+              <li><a href="#about-us">ABOUT US</a></li>
+              <li><a href="#services">SERVICES</a></li>
+              <li><a href="#team">SPECIALISTS</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#">TESTIMONIALS</a></li>
+              <li><a href="#contact-us">CONTACTS</a></li>
+              <li><a href="#footer-section">ALL BLOKS</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-body max-width flex-row">
+          <a href="#" class="rslides_nav rslides1_nav prev slide-btn"
+            ><i class="fas fa-chevron-left"></i>
+          </a>
+          <div>
+            <h1>Reliable & High-Quality Laboratory Services</h1>
+            <p>We employ the latest technology and innovations</p>
+            <form name="header-form" class="flex-column">
+              <input
+                class="default-input"
+                type="text"
+                id="header-form-name"
+                name="name"
+                placeholder="Name *"
+                required
+              />
+              <input
+                class="default-input"
+                type="email"
+                id="header-form-email"
+                name="email"
+                placeholder="Email *"
+                required
+              />
+              <span id="header-form-error-box" class="form-error-box"></span>
+              <a onclick="validate('header-form')" class="base-btn blue-btn-white-brdr">Send</a>
+            </form>
+          </div>
+          <a href="#" class="rslides_nav rslides1_nav next slide-btn"
+            ><i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <section id="about-us">
+      <div class="about-us max-width">
+        <div class="about-us-desc">
+          <h3 class="subtitle wow animate__animated animate__fadeInDown">
+            About Us
+          </h3>
+          <h1 class="title wow animate__animated animate__fadeInUp">
+            Who We Are
+          </h1>
+          <p>
+            <br />
+            MedLab is a medical testing laboratory service that offers a
+            complete range of tests for diagnosis, screening or evaluation of
+            diseases and health conditions. <br /><br /><br />We are certified
+            under the federal government’s Clinical Laboratory Improvement
+            Amendments and operate in compliance with all governmental
+            regulations. We use the latest diagnostic technology and
+            innovations. Our laboratory technicians are well trained and have
+            many years of experience. They provide the most accurate and precise
+            testing results.
+          </p>
+        </div>
+        <div>
+          <div class="tab-btns">
+            <a id="why-choose-us-btn" class="active-tab">Why Choose Us</a>
+            <a id="location-btn" class="inactive-tab">Location</a>
+          </div>
+          <div id="why-choose-us-tab" class="why-choose-us-tab">
+            <div class="why-choose-item">
+              <i class="fas fa-briefcase-medical"></i>
+              <div>
+                <h1>Experience</h1>
+                <p>
+                  MedLab Laboratory was founded in 2001 by a team of certified
+                  professional with great technical and business experience.
+                </p>
+              </div>
+            </div>
+            <div class="why-choose-item">
+              <i class="fas fa-user-graduate"></i>
+              <div>
+                <h1>Professionals</h1>
+                <p>
+                  Our team of pathologists, bioanalysts, microbiologists and
+                  general clinical laboratory scientists are always ready to
+                  help you with your laboratory testing needs.
+                </p>
+              </div>
+            </div>
+            <div class="why-choose-item">
+              <i class="fas fa-medal"></i>
+              <div>
+                <h1>Quality</h1>
+                <p>
+                  We provide the highest quality of testing along with a
+                  personal level of service unparalleled in the industry.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="location-tab" class="location-tab">
+            <div class="location-tab-col">
+              <h1>Miami Lab Center</h1>
+              <hr />
+              <div class="location-tab-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <p>325 SE. 1nd Court Ft.</p>
+                  <p>Lauderdale FL 33301</p>
+                </div>
+              </div>
+              <div class="location-tab-item">
+                <i class="fas fa-phone-volume"></i>
+                <div>
+                  <p>Phone:</p>
+                  <p>(123) 456-7891</p>
+                </div>
+              </div>
+              <div class="location-tab-item">
+                <i class="far fa-clock"></i>
+                <div>
+                  <p>Hours:</p>
+                  <p>9:00 AM - 6:00 PM</p>
+                </div>
+              </div>
+            </div>
+            <div class="location-tab-col">
+              <h1>Test Miami</h1>
+              <hr />
+              <div class="location-tab-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <p>809 N Military</p>
+                  <p>Trl,u0003FL 33301</p>
+                </div>
+              </div>
+              <div class="location-tab-item">
+                <i class="fas fa-phone-volume"></i>
+                <div>
+                  <p>Phone:</p>
+                  <p>(123) 456-7891</p>
+                </div>
+              </div>
+              <div class="location-tab-item">
+                <i class="far fa-clock"></i>
+                <div>
+                  <p>Hours:</p>
+                  <p>9:00 AM - 6:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="call-us" class="call-us">
+      <div class="call-us-content-wrapper">
+        <div class="call-us-content">
+          <div>
+            <h1>Call us (123) 456-7891</h1>
+            <p>or click the link below to book your appointment</p>
+          </div>
+          <a id="request-callback" class="base-btn blue-btn-white-on-hvr">
+            Make an Appointment
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="carousel-section">
+      <div class="carousel-box">
+        <h3 class="subtitle wow animate__animated animate__fadeInDown">
+          Partners
+        </h3>
+        <h1 class="title wow animate__animated animate__fadeInUp">
+          Our Insurance Partners
+        </h1>
+        <section id="carousel">
+          <a href="#" class="buttons prev carousel-btn">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+          <div class="viewport">
+            <ul class="overview">
+              <li><img src="img/carousel1.png" alt="" /></li>
+              <li><img src="img/carousel2.png" alt="" /></li>
+              <li><img src="img/carousel3.png" alt="" /></li>
+              <li><img src="img/carousel4.png" alt="" /></li>
+              <li><img src="img/carousel5.png" alt="" /></li>
+              <li><img src="img/carousel6.png" alt="" /></li>
+            </ul>
+          </div>
+          <a href="#" class="buttons next carousel-btn">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </section>
+      </div>
+    </section>
+    <section id="team">
+      <div class="team max-width">
+        <h3 class="subtitle wow animate__animated animate__fadeInDown">
+          Our Team
+        </h3>
+        <h1 class="title wow animate__animated animate__fadeInUp">
+          Medical Specialists
+        </h1>
+        <div class="members">
+          <div class="member-card">
+            <div class="member-img">
+              <figure>
+                <img src="img/doctor1.jpg" alt="" />
+              </figure>
+              <div class="member-img-info">
+                <i class="fas fa-microscope"></i>
+              </div>
+            </div>
+            <h2>Gary Truman</h2>
+            <h3>Laboratory Technician</h3>
+          </div>
+          <div class="member-card">
+            <div class="member-img">
+              <figure>
+                <img src="img/doctor2.jpg" alt="" />
+              </figure>
+              <div class="member-img-info">
+                <i class="fas fa-microscope"></i>
+              </div>
+            </div>
+            <h2>Phill Beasley</h2>
+            <h3>Head microbiologist</h3>
+          </div>
+          <div class="member-card">
+            <div class="member-img">
+              <figure>
+                <img src="img/doctor3.jpg" alt="" />
+              </figure>
+              <div class="member-img-info">
+                <i class="fas fa-microscope"></i>
+              </div>
+            </div>
+            <h2>Tom Neville</h2>
+            <h3>Laboratory Technician</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="gallery-wrapper">
+        <div class="container max-width">
+          <h3 class="subtitle wow animate__animated animate__fadeInDown">
+            Gallery
+          </h3>
+          <h1 class="title wow animate__animated animate__fadeInUp">Our job</h1>
+          <div class="delimiter">
+            <div class="video-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/y9ohUOVqM9k"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="gallery">
+            <div class="gallery-position-wrapper">
+              <div class="gallery-col">
+                <a
+                  href="img/gallery-1.png"
+                  data-lightbox="gallery-1"
+                  data-title="Gallery"
+                  ><figure><img src="img/gallery-1.png" alt="" /></figure
+                ></a>
+                <a
+                  href="img/gallery-2.jpg"
+                  data-lightbox="gallery-2"
+                  data-title="Gallery"
+                  ><figure><img src="img/gallery-2.jpg" alt="" /></figure
+                ></a>
+                <a
+                  href="img/gallery-6.jpg"
+                  data-lightbox="gallery-6"
+                  data-title="Gallery"
+                  ><figure><img src="img/gallery-6.jpg" alt="" /></figure
+                ></a>
+              </div>
+              <div class="gallery-col">
+                <a
+                  href="img/gallery-3.jpg"
+                  data-lightbox="gallery-3"
+                  data-title="Gallery"
+                  ><figure><img src="img/gallery-3.jpg" alt="" /></figure
+                ></a>
+                <a
+                  href="img/gallery-4.jpg"
+                  data-lightbox="gallery-4"
+                  data-title="Gallery"
+                  ><figure><img src="img/gallery-4.jpg" alt="" /></figure
+                ></a>
+                <a
+                  href="img/gallery-5.jpg"
+                  data-lightbox="gallery-5"
+                  data-title="Gallery"
+                  ><figure><img src="img/gallery-5.jpg" alt="" /></figure
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact-us">
+        <div class="container max-width">
+          <div class="formulary">
+            <form name="contact-form" action="">
+              <input
+                class="default-input"
+                type="text"
+                id="contact-form-first-name"
+                name="first name"
+                placeholder="First Name *"
+                required
+              />
+              <input
+                class="default-input"
+                type="text"
+                id="contact-form-last-name"
+                name="last name"
+                placeholder="Last Name *"
+                required
+              />
+              <input
+                class="default-input"
+                type="email"
+                id="contact-form-email"
+                name="email"
+                placeholder="Email *"
+                required
+              />
+              <textarea
+                class="default-input"
+                type="text"
+                id="contact-form-textarea"
+                name="email"
+                placeholder="Message"
+              ></textarea>
+              <h3>Services that interest me</h3>
+              <div class="checkbox-list">
+                <div class="checkbox-list-col">
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="contact-form-service1"
+                      name="service1"
+                      value="Allergy"
+                    />
+                    <label for="service1"> Allergy</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="contact-form-service2"
+                      name="service2"
+                      value="Urology"
+                    />
+                    <label for="service2"> Urology Testing</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="contact-form-service3"
+                      name="service3"
+                      value="Cardiovascular"
+                    />
+                    <label for="service3"> Cardiovascular Testing</label>
+                  </div>
+                </div>
+                <div class="checkbox-list-col">
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="contact-form-service4"
+                      name="service4"
+                      value="Diabetes"
+                    />
+                    <label for="service4"> Diabetes Testing</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="contact-form-service5"
+                      name="service5"
+                      value="Pathology"
+                    />
+                    <label for="service5"> Pathology Testing</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="service6"
+                      name="service6"
+                      value="Oncology"
+                    />
+                    <label for="service6"> Oncology Testing</label>
+                  </div>
+                </div>
+              </div>
+              <span id="contact-form-error-box" class="form-error-box"></span>
+              <a onclick="validate('contact-form')" class="base-btn blue-btn-white-brdr">
+                Submit Your Request</a
+              >
+            </form>
+          </div>
+          <div class="contact-data-wrapper">
+            <div class="contact-data">
+              <div>
+                <h1 class="wow animate__animated animate__fadeInDown">
+                  Primary Contacts
+                </h1>
+                <p><span>Phone: </span><a href="#">(123) 456-7891</a></p>
+                <p><span>Fax: </span><a href="#">(123) 456-7891</a></p>
+                <p><span>Email: </span><a href="#">MedLab@demolink.org</a></p>
+              </div>
+              <div>
+                <h1 class="wow animate__animated animate__fadeInUp">
+                  Directions
+                </h1>
+                <p><b>325 SE. 1nd Court Ft. Lauderdale FL 33301</b></p>
+                <p><span>Hours: </span>9:00 AM - 6:00 PM</p>
+              </div>
+            </div>
+            <figure>
+              <img src="img/map.jpg" alt="" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer-section">
+      <div class="container max-width">
+        <div class="footer-col">
+          <figure><img src="img/logo-header.png" alt="" /></figure>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using
+          </p>
+        </div>
+        <div class="footer-col">
+          <h2>Contac Us</h2>
+          <p>Washington, USA 6036 Richmond, hwy., Alexandria, VA, 2233</p>
+          <p>
+            <span>Phone: </span><a href="#">+1 (234) 567 8910</a> <br />
+            <a href="#">info@demolink.org</a>
+          </p>
+        </div>
+        <div class="social-media footer-col">
+          <h2>Social Media</h2>
+          <div>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fas fa-wifi"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#top" class="btn-back-to-top">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+    <section>
+      <div id="modal" class="modal-background">
+        <div class="modal">
+          <h1>Request a Callback</h1>
+          <p>We can call you in 30 seconds, just enter your number below</p>
+          <form name="modal-form" action="">
+            <input
+              class="default-input"
+              type="text"
+              id="modal-form-name"
+              name="name"
+              placeholder="Name *"
+              required
+            />
+            <input
+              class="default-input"
+              type="email"
+              id="modal-form-email"
+              name="email"
+              placeholder="Email *"
+              required
+            />
+          </form>
+          <span id="modal-form-error-box" class="form-error-box"></span>
+          <button onclick="validate('modal-form')" class="base-btn blue-btn-white-brdr">Request</button>
+          <i id="close-modal" class="fas fa-times"></i>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
